@@ -159,19 +159,19 @@ h1, h2, h3, h4 {
 .site-name .pronoun { font-size: 1rem; vertical-align: middle; margin-left: 12px; }
 
 .crew-card {
-  width: 220px;
+  width: 270px;
   flex-shrink: 0;
-  padding: 22px 20px;
+  padding: 28px 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
   border-left: 1px solid var(--line);
   text-align: center;
 }
 .crew-photo {
-  width: 88px;
-  height: 88px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
   border: 1px solid var(--line-strong);
@@ -179,19 +179,19 @@ h1, h2, h3, h4 {
 .crew-links {
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  font-size: 0.82rem;
+  gap: 8px;
+  font-size: 0.94rem;
 }
 .crew-links a { text-decoration: none; color: var(--text-dim); }
 .crew-links a:hover { color: var(--accent); }
 .resume-btn {
   display: inline-block;
-  margin-top: 2px;
-  padding: 9px 18px;
+  margin-top: 4px;
+  padding: 11px 24px;
   background: var(--accent);
   color: var(--accent-text);
   text-decoration: none;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 500;
   border-radius: 4px;
 }
