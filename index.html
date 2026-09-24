@@ -4,56 +4,316 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>June Bang | Portfolio</title>
+  <meta name="description" content="June Bang — aerospace and mechanical engineering student. Robotics, CAD, manufacturing, and systems engineering." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="hero">
-    <h1>June Bang</h1>
-    <p>Aerospace & Mechanical Engineering Student</p>
-    <p>Robotics, CAD, manufacturing, and systems engineering.</p>
-  </header>
 
-  <main>
-    <section>
-      <h2>About Me</h2>
-      <p>
-        I’m an engineering student interested in robotics, rover systems,
-        mechanical design, CAD, and hands-on prototyping.
-      </p>
-    </section>
-
-    <section>
-      <h2>Projects</h2>
-
-      <div class="project-card">
-        <h3>UB Space Bulls Rover</h3>
-        <p>
-          Leading and contributing to rover development for URC, including
-          mechanical systems, integration, and robotics workflows.
-        </p>
+<header class="site-header">
+  <div class="nav-row">
+    <span class="brand-mark">JB</span>
+    <nav class="site-nav">
+      <a href="#overview">Overview</a>
+      <a href="#projects">Projects</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+  <div class="name-block">
+    <h1 class="site-name">June Bang<span class="pronoun">He/Him</span></h1>
+  </div>
+  <div class="id-main">
+    <div class="id-grid">
+      <div class="id-cell">
+        <span class="id-label">Program</span>
+        <span class="id-value">B.S. Aerospace &amp; Mechanical Engineering, Robotics Minor</span>
       </div>
-
-      <div class="project-card">
-        <h3>Cycloidal Gearbox</h3>
-        <p>
-          Designed and tested compact high-reduction gearboxes for robotic arm applications.
-        </p>
+      <div class="id-cell">
+        <span class="id-label">School</span>
+        <span class="id-value">University at Buffalo — SEAS <span class="mono id-sub">· Expected May 2028</span></span>
       </div>
-
-      <div class="project-card">
-        <h3>Robot Sensor Dashboard</h3>
-        <p>
-          Future project idea: a dashboard for displaying fake or real robot telemetry.
-        </p>
+      <div class="id-cell">
+        <span class="id-label">Current Roles</span>
+        <span class="id-value"><img class="team-badge" src="images/space-bulls-mark.png" alt="" />Chief Engineer, University Rover Challenge</span>
+        <span class="id-value">Manufacturing Eng. Intern, Moog</span>
       </div>
-    </section>
+    </div>
+    <aside class="crew-card">
+      <img class="crew-photo" src="images/headshot.jpg" alt="June Bang" />
+      <div class="crew-links">
+        <a href="mailto:june.bang.h@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/june-bang/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <a href="resume/June-Bang-Resume.pdf" class="resume-btn" download>Download Résumé</a>
+    </aside>
+  </div>
+</header>
 
-    <section>
-      <h2>Contact</h2>
-      <p>Email: your-email@example.com</p>
-      <p>LinkedIn: linkedin.com/in/your-profile</p>
-      <p>GitHub: github.com/your-username</p>
-    </section>
-  </main>
+<main>
+  <section id="overview" class="sheet overview">
+    <div class="overview-text">
+      <p class="eyebrow">About</p>
+      <h1>Mechanical systems, from tolerance stack-up to shop floor.</h1>
+      <p class="lede">I'm an aerospace and mechanical engineering student. I care more about whether something works than what discipline it falls under. As Chief Engineer for UB's University Rover Challenge team, I lead cross-functional integration across mechanical, electrical, and software subteams. My background is hardware-first, so I'm usually the one making sure CAD, code, and machining actually line up. I do similar work as a Manufacturing Engineering Intern at Moog, building tooling and documentation that carries design intent from CAD to the shop floor. Either way, the core skill is the same: understand how the physical system behaves, then build the process or software around it.</p>
+    </div>
+    <figure class="overview-photo">
+      <img src="images/rover-hero.jpg" alt="University Rover Challenge Space Bulls rover with its manipulator arm extended, in the UB engineering lab" />
+      <figcaption>University Rover Challenge — Space Bulls Rover</figcaption>
+    </figure>
+  </section>
+
+  <section id="projects" class="sheet">
+    <p class="eyebrow">Selected Work</p>
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <article class="project">
+        <div class="photo-slot filled">
+          <img src="images/sudoarms-demo.png" alt="Sudo Arms demo showing the Viam sensor dashboard and a Gazebo simulation of the arm with an obstacle" />
+        </div>
+        <div class="project-body">
+          <div class="project-head">
+            <h3>Sudo Arms</h3>
+            <div class="project-meta">
+              <span class="date">StarkHacks</span>
+              <span class="status-pill complete">Complete</span>
+              <span class="status-pill award">Space Exploration Track Winner</span>
+            </div>
+          </div>
+          <p>Built at StarkHacks, one of the largest hardware hackathons — a low-cost leader-follower teleoperation system for medium-distance work with real-time haptic feedback that flags likely collisions before the far-side arm makes contact with the latency it's operating under. Handled preliminary CAD and hardware integration across the team's ROS 2 Jazzy, SLAM, Gazebo, Viam, and Docker-based stack.</p>
+          <div class="spec-frame">
+            <div class="spec"><span class="spec-value">1st Place</span><span class="spec-label">Space Exploration Track</span></div>
+            <div class="spec"><span class="spec-value">Leader / Follower</span><span class="spec-label">Arm Architecture</span></div>
+            <div class="spec"><span class="spec-value">CAD + Integration</span><span class="spec-label">My Role</span></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="photo-slot filled">
+          <img src="images/cycloidal.png" alt="Exploded assembly render of the cycloidal gearbox showing the cycloidal disc, bearings, and output housing" />
+        </div>
+        <div class="project-body">
+          <div class="project-head">
+            <h3>Cycloidal Gearbox Design</h3>
+            <div class="project-meta">
+              <span class="date">Dec 2025 — Present</span>
+              <span class="status-pill active">Active</span>
+            </div>
+          </div>
+          <p>Designed and manufactured a 1:64 cycloidal gearbox for robotic-arm output stages, calculating gear geometry and eccentricity by hand before cutting hardware. Iterated CF-PETG components, pin clearances, and fits across builds to eliminate load-induced gear skipping.</p>
+          <div class="spec-frame">
+            <div class="spec"><span class="spec-value">40–50 Nm</span><span class="spec-label">Target Torque</span></div>
+            <div class="spec"><span class="spec-value">82%</span><span class="spec-label">Est. Efficiency</span></div>
+            <div class="spec"><span class="spec-value">~14 arcmin</span><span class="spec-label">Backlash</span></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="photo-slot filled">
+          <img src="images/pid-bot.png" alt="PID balancing robot CAD render with a two-wheel stance and a face-display screen" />
+        </div>
+        <div class="project-body">
+          <div class="project-head">
+            <h3>PID Balancing Robot</h3>
+            <div class="project-meta">
+              <span class="date">May 2026</span>
+              <span class="status-pill complete">Design Finalized</span>
+            </div>
+          </div>
+          <p>A two-wheel self-balancing robot built around a PID control loop, using IMU feedback and drive encoders to hold balance in real time on an Arduino platform. Designed a two-legged chassis with a face-display screen. Mechanical design and control logic are finished; final assembly was never completed.</p>
+          <div class="spec-frame">
+            <div class="spec"><span class="spec-value">PID Loop</span><span class="spec-label">Balancing Method</span></div>
+            <div class="spec"><span class="spec-value">IMU + Encoders</span><span class="spec-label">Sensors</span></div>
+            <div class="spec"><span class="spec-value">Arduino</span><span class="spec-label">Platform</span></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="photo-slot filled">
+          <img src="images/wrist-cad.jpg" alt="Differential Wrist Joint assembly CAD render" />
+        </div>
+        <div class="project-body">
+          <div class="project-head">
+            <h3>Differential Wrist Joint</h3>
+            <div class="project-meta">
+              <span class="date">Aug 2024 — May 2025</span>
+              <span class="status-pill complete">Complete</span>
+            </div>
+          </div>
+          <p>Designed a differential wrist mechanism combining a 1:3 drive stage with a 1:4 differential reduction. Used FEA and topology optimization to cut component weight while holding tolerance and reliable assembly.</p>
+          <div class="spec-frame">
+            <div class="spec"><span class="spec-value">25 Nm</span><span class="spec-label">Target Torque</span></div>
+            <div class="spec"><span class="spec-value">36%</span><span class="spec-label">Mass Reduction</span></div>
+            <div class="spec"><span class="spec-value">1:3 / 1:4</span><span class="spec-label">Drive / Diff Ratio</span></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="photo-slot filled">
+          <img src="images/battlebot.png" alt="Battle Bot CAD render showing the horizontal spinner weapon and chassis" />
+        </div>
+        <div class="project-body">
+          <div class="project-head">
+            <h3>Battle Bot — 3 lb Division</h3>
+            <div class="project-meta">
+              <span class="date">Nov 2025</span>
+              <span class="status-pill complete">Complete</span>
+            </div>
+          </div>
+          <p>End-to-end build for UB's Battle Bot Competition with UB SHPE and UB WOAA — mechanical design, rapid prototyping, and hand-soldered electronics from breadboard to battle-ready. Set up the H-bridge motor drivers, read PWM off the RC receiver, and wrote the C control code handling real-time movement, failsafes, and system response under load.</p>
+          <div class="spec-frame">
+            <div class="spec"><span class="spec-value">2nd Place</span><span class="spec-label">3 lb Division</span></div>
+            <div class="spec"><span class="spec-value">~3 Weeks</span><span class="spec-label">Concept to Competition</span></div>
+            <div class="spec"><span class="spec-value">Horizontal Spinner</span><span class="spec-label">Weapon Type</span></div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="capabilities" class="sheet">
+    <p class="eyebrow">Toolkit</p>
+    <h2>Capabilities</h2>
+    <div class="cap-grid">
+      <div class="cap-group">
+        <h3>CAD &amp; Drafting</h3>
+        <ul class="skill-list">
+          <li class="skill-row"><span>Fusion 360</span><span class="level-pill advanced">Advanced</span></li>
+          <li class="skill-row"><span>SolidWorks</span><span class="level-pill advanced">Advanced</span></li>
+          <li class="skill-row"><span>Siemens NX</span><span class="level-pill advanced">Advanced</span></li>
+          <li class="skill-row"><span>GD&amp;T</span><span class="level-pill proficient">Proficient</span></li>
+          <li class="skill-row"><span>Inventor</span><span class="level-pill proficient">Proficient</span></li>
+          <li class="skill-row"><span>AutoCAD</span><span class="level-pill introductory">Introductory</span></li>
+        </ul>
+      </div>
+      <div class="cap-group">
+        <h3>Analysis &amp; Simulation</h3>
+        <ul class="skill-list">
+          <li class="skill-row"><span>Finite Element Analysis</span><span class="level-pill advanced">Advanced</span></li>
+          <li class="skill-row"><span>MATLAB</span><span class="level-pill proficient">Proficient</span></li>
+          <li class="skill-row"><span>CFD</span><span class="level-pill introductory">Introductory</span></li>
+          <li class="skill-row"><span>Topology Optimization</span><span class="level-pill introductory">Introductory</span></li>
+        </ul>
+      </div>
+      <div class="cap-group">
+        <h3>Fabrication</h3>
+        <ul class="skill-list">
+          <li class="skill-row"><span>3D Printing</span><span class="level-pill advanced">Advanced</span></li>
+          <li class="skill-row"><span>Soldering &amp; PCB Assembly</span><span class="level-pill advanced">Advanced</span></li>
+          <li class="skill-row"><span>CNC Milling</span><span class="level-pill proficient">Proficient</span></li>
+          <li class="skill-row"><span>CAM</span><span class="level-pill proficient">Proficient</span></li>
+        </ul>
+      </div>
+      <div class="cap-group">
+        <h3>Programming</h3>
+        <ul class="skill-list">
+          <li class="skill-row"><span>Arduino</span><span class="level-pill advanced">Advanced</span></li>
+          <li class="skill-row"><span>ROS 2</span><span class="level-pill proficient">Proficient</span></li>
+          <li class="skill-row"><span>Python</span><span class="level-pill introductory">Introductory</span></li>
+          <li class="skill-row"><span>Embedded C</span><span class="level-pill introductory">Introductory</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="sheet">
+    <p class="eyebrow">Timeline</p>
+    <h2>Education &amp; Experience</h2>
+    <div class="timeline-cols">
+      <div>
+        <h3 class="col-title">Education</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="date">Aug 2024 — Expected May 2028</span>
+            <h4>University at Buffalo — SEAS</h4>
+            <div class="org">B.S. Aerospace &amp; Mechanical Engineering, Robotics Minor</div>
+            <p>Extracurriculars: <img class="team-badge" src="images/space-bulls-mark.png" alt="" />University Rover Challenge, SASE, SHPE, IEEE, Badminton Club, Kendo Club</p>
+          </div>
+          <div class="timeline-item quiet">
+            <span class="date">2019 — 2024</span>
+            <h4>Mineola High School</h4>
+            <div class="org">AP Scholar</div>
+            <p>Robotics (FRC) — Mechanical Design Lead · Marching Band · TED-Ed Club</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3 class="col-title">Experience</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="date">May 2026 — Present</span>
+            <h4>Manufacturing Eng. Intern</h4>
+            <div class="org">Moog</div>
+            <p>Implemented a new Siemens MRL library for faster, more consistent workflow tool creation, and built a standardized Siemens NX CAM tooling library for Nakamura NTRX-300 mill-turn centers; standardized machining documentation.</p>
+          </div>
+          <div class="timeline-item">
+            <span class="date">Aug 2024 — Present</span>
+            <h4>Chief Engineer</h4>
+            <div class="org"><img class="team-badge" src="images/space-bulls-mark.png" alt="" />University Rover Challenge, UB</div>
+            <p>Grew the team from 10 to 65 members across 9 subteams, owning systems architecture and cross-team collaboration to keep deliverables on track. Coordinated ROS 2 / Gazebo / Isaac Sim / MoveIt 2 integration across mechanical, electrical, and software, and helped build foundational technical knowledge across the team.</p>
+          </div>
+          <div class="timeline-item">
+            <span class="date">Sept 2025 — Present</span>
+            <h4>Student Assistant</h4>
+            <div class="org">SEAS DREAM Lab, UB</div>
+            <p>Ran GD&amp;T, topology optimization, and Arduino workshops; trained students on CNC milling and 3D printing.</p>
+          </div>
+          <div class="timeline-item">
+            <span class="date">Aug 2025 — Apr 2026</span>
+            <h4>Manipulation Lead</h4>
+            <div class="org"><img class="team-badge" src="images/space-bulls-mark.png" alt="" />University Rover Challenge, UB</div>
+            <p>Led the manipulator subteam through the Differential Wrist Joint program — mechanism design, FEA, and tolerance analysis for the arm's end effector.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gallery">
+      <h3 class="gallery-title">Team &amp; Lab Photos</h3>
+      <div class="gallery-grid">
+        <figure class="gallery-photo pos-bottom">
+          <img src="images/dream-lab.jpg" alt="DREAM Lab workshop session" />
+          <figcaption>DREAM Lab — Workshop Session</figcaption>
+        </figure>
+        <figure class="gallery-photo contain">
+          <img src="images/lab-robot.jpg" alt="Mecanum-wheel robot on a lab bench" />
+          <figcaption>DREAM Lab — Robotics Bench</figcaption>
+        </figure>
+        <figure class="gallery-photo">
+          <img src="images/sudoarms-award.jpg" alt="Sudo Arms team on stage receiving the StarkHacks Space Exploration Track award" />
+          <figcaption>StarkHacks — Space Exploration Track Win</figcaption>
+        </figure>
+        <figure class="gallery-photo">
+          <img src="images/gbm-presentation.jpg" alt="University Rover Challenge team presenting the rover at a general body meeting" />
+          <figcaption>University Rover Challenge — General Body Meeting</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="sheet contact">
+    <p class="eyebrow">Get In Touch</p>
+    <h2>Contact</h2>
+    <div class="contact-grid">
+      <a class="contact-link" href="mailto:june.bang.h@gmail.com">
+        <span class="id-label">Email</span>
+        <span class="id-value">june.bang.h@gmail.com</span>
+      </a>
+      <a class="contact-link" href="https://www.linkedin.com/in/june-bang/" target="_blank" rel="noopener">
+        <span class="id-label">LinkedIn</span>
+        <span class="id-value">linkedin.com/in/june-bang</span>
+      </a>
+    </div>
+    <p class="aside-note">Outside the shop: percussion instructor, Lancaster High School Marching Legends — July 2026–Present</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  © 2026 June Bang
+</footer>
+
 </body>
 </html>
